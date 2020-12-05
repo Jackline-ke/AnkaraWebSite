@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: sans-serif;
+}
+header{
+    
+    height: 100vh;
+    width: 100vw;
+}
+.head{
+    background: radial-gradient(#fff,blanchedalmond);
+}
+nav{
+    
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    padding: 20px;
+    color: black;
+}
+.list-items{
+    display: flex;
+    width: 50%;
+    list-style: none;
+    justify-content: space-around;
+}
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    transition: 0.4s;    
+}
+.link:hover{
+    color: #004d4d;
+}
+.main{
+    
+    position: relative;
+    height: 90vh;
+    width: 100%;
+}
+.main-left{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 65%;
+    
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.f-text h1{
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+
+}
+.f-text span{
+    color:#004d4d;
+}
+.main-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    
+}
+.main-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    opacity: 0;
+    animation: animation 5s forwards;
+    animation-delay: 1s;
+    
+}
+@keyframes animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

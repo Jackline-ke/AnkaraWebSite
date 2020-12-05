@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(#fff,blanchedalmond); 
+}
+.categories{
+    max-width: 1200px;
+    margin: auto;
+    background: blanchedalmond;
+    overflow: auto;
+}
+.products{
+    margin: 5px;
+    border: 1px solid blanchedalmond;
+    float: left;
+    width: 390px;
+}
+.products:hover{
+    transform: translateY(-.5rem);
+}
+
+.data{
+    padding: 15px;
+    text-align: center;
+}
